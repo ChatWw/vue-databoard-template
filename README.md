@@ -2,7 +2,9 @@
 
 # vren-vue2-screen-template
 
-> Project Introduction: This is a large screen project template based on Vue 2, designed for quickly building large screen projects.
+Project Introduction: This is a large-screen project template developed based on Vue 2, Element-UI, ECharts, ECharts-GL and SCSS, designed for quickly building large-screen projects. All redundant business function modules have been completely removed from this template, leaving only the core functional templates of the project. After downloading the project, you can carry out customized development according to your project requirements.
+
+> If you like this project, please feel free to give it a Star. Thank you!
 
 ## Directory Structure
 ```
