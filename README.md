@@ -1,10 +1,10 @@
+[中文](./README_zh.md)|[English](./README.md)
+
 # vren-vue2-screen-template
 
-# vren vue 2 大屏项目模板
+> Project Introduction: This is a large screen project template based on Vue 2, designed for quickly building large screen projects.
 
-> 项目介绍：这是一个基于vue 2 的大屏项目模板，用于快速搭建大屏项目。
-
-## 目录结构
+## Directory Structure
 ```
 ├── .gitignore
 ├── .prettierignore
@@ -33,48 +33,41 @@
 └── vue.config.js
 ```
 
-本模板使用 pxtorem 进行单位转换，在项目`postcss.config.js`中默认配置为 rootValue: 192，设计稿宽度的 1/10，1920px/10 = 192。
+This template uses pxtorem for unit conversion. The default configuration in the project's `postcss.config.js` is rootValue: 192, which is 1/10 of the design draft width (1920px/10 = 192).
 
-本模板已配置 element-ui 组件库，使用 scss 进行样式编写，默认配置了 element-ui 的主题变量，可在项目`src/styles/element-variables.scss`中修改。
+This template has configured the Element-UI component library and uses SCSS for style writing. The theme variables of Element-UI are configured by default, which can be modified in the project's `src/styles/element-variables.scss`.
 
-本模板提供基础的router和store，在`src/utils/http.js`中已经配置了全局的 axios 实例，并且已经安装了 echarts 图表库和 echarts-gl 3D 图表库，可根据项目需求进行删减。
+This template provides basic router and store. A global axios instance has been configured in `src/utils/http.js`, and the ECharts chart library and ECharts-GL 3D chart library have been installed, which can be deleted according to project requirements.
 
-本模板提供了三个通用组件，分别是：
+This template provides three universal components:
 
--   `src/components/SpecialFonts`：特殊字体组件，用于页面中需要使用特殊字体的地方。
--   `src/components/sTable`：表格组件，用于页面中需要使用表格的地方。
--   `src/components/vaIcon`：图标组件，用于页面中需要使用图标的地方。
+-   `src/components/SpecialFonts`: Special font component, used where special fonts are needed on the page.
+-   `src/components/sTable`: Table component, used where tables are needed on the page.
+-   `src/components/vaIcon`: Icon component, used where icons are needed on the page.
 
----
-
-## 调试
+## Debugging
 
 ```
-// 安装依赖
+// Install dependencies
 npm install
 
-// 运行项目
+// Run the project
 npm run local
 
-// 打包
+// Build the project
 npm run build
 ```
 
----
+## Git Commit Message Specification
+When making a git commit, you must fill in a commit message that complies with the specification. The format is "commit type: detailed description of this commit", e.g., `git commit -m 'feat: add delete function for a certain business'`.
 
-#### git commit msg 规范
-
-git commit 时必须填写符合规范的 msg 信息，格式为“提交类型: 本次提交的详细说明”，如`git commit -m 'feat: 增加某业务删除功能'`。
-
--   feat: 增加新功能
--   fix: bug 修复
--   docs: 文档修改
--   style: 修改代码格式
--   refactor: 代码优化或重构
--   perf: 优化性能
--   test: 改善测试用例
--   build: 改变构建流程，如新增依赖库、工具
--   chore: 非 src 和 test 的修改
--   revert: 回滚代码
-
----
+- feat: Add new features
+- fix: Bug fixes
+- docs: Documentation modifications
+- style: Modify code format (no code logic changes)
+- refactor: Code optimization or refactoring
+- perf: Performance optimization
+- test: Improve test cases
+- build: Change the build process (e.g., add new dependency libraries, tools)
+- chore: Modifications outside of src and test directories
+- revert: Roll back code
