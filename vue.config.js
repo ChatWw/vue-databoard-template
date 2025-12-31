@@ -13,7 +13,7 @@ module.exports = defineConfig({
             entry: 'src/main.js',
             template: 'public/index.html',
             filename: 'index.html',
-            title: '[vren] vue2 大屏模板'
+            title: 'vue-databoard-template'
         }
     },
     chainWebpack: (config) => {

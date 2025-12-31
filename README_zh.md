@@ -1,6 +1,6 @@
 [中文](./README_zh.md)|[English](./README.md)
 
-# vren vue 2 大屏项目模板
+# vue 2 大屏看板项目模板
 
 项目介绍：这是一个基于vue 2、element-ui、echarts、echarts-gl、scss 编写的大屏项目模板，用于快速搭建大屏项目。本模板已经完全移除冗余业务功能模块，只保留了项目的核心功能模板，您在下载项目后可以根据项目需求进行定制化开发。
 
