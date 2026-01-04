@@ -9,10 +9,17 @@ const routes = [
     {
         path: '/',
         redirect: '/home/databoard'
+    },
+    {
+        path: '*',
+        name: '404',
+        component: () => import('@/layout/components/404/index.vue')
     }
 ]
 
-const Routes = [...routes, ...HomeRoutes]
+// 确保404路由是最后一个路由
+const appRoutes = [...routes.slice(0, -1), ...HomeRoutes, routes[routes.length - 1]]
+const Routes = appRoutes
 
 const router = new Router({
     routes: Routes

@@ -5,7 +5,6 @@ import 'amfe-flexible'
 import tool from '@/utils/tool'
 import STable from '@/components/sTable'
 import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
 import './styles/element-variables.scss'
 
 // 全局组件挂载

@@ -1,9 +1,6 @@
 // element-variables.scss
 /* 覆盖 Element 核心变量 */
 $--color-primary: #1f2328; // 自定义主题色
-$--color-success: #52c41a; // 可选：修改成功色
-$--color-warning: #faad14; // 可选：修改警告色
-$--color-danger: #ff4d4f;  // 可选：修改危险色
 $--font-path: '~element-ui/packages/theme-chalk/src/fonts'; // 修复字体文件路径
 
 @import "element-ui/packages/theme-chalk/src/index";
